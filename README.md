@@ -114,6 +114,7 @@ Polynomial Regression is used to capture nonlinear relationships between feature
     model_poly = LinearRegression()
     model_poly.fit(X_train_poly, y_train)
 
+
 #### Ridge Regression
 
 Ridge Regression is used to reduce overfitting through L2 regularization.
@@ -178,83 +179,21 @@ The project generates true vs. predicted plots for each model.
 
 These figures are saved in the `figures/` directory.
 
+For example,
+<p align="center">
+  <img src="figures/True vs. Predicted Polynomial regression.png.png" width="900">
+</p>
+
 The red dashed line in each plot represents perfect prediction. Points closer to this line indicate better model performance.
 
 ## How to Run
 
-This project was developed in Google Colab.
+This project was developed in Google Colab. Run notebooks in order:
 
-### Step 1: Clone or open the project
-
-Clone the repository:
-
-    git clone https://github.com/yiheng870106/California-housing.git
-
-Move into the project folder:
-
-    cd California-housing
-
-### Step 2: Open the notebooks
-
-Open the notebooks in Google Colab:
-
-1. `notebooks/Setup.ipynb`
-2. `notebooks/Regression Analysis on California Housing Data.ipynb`
-
-### Step 3: Run setup
-
-Run `Setup.ipynb` first. This notebook creates the project folders and helper files.
-
-### Step 4: Run the regression analysis
-
-Run `Regression Analysis on California Housing Data.ipynb`.
-
-This notebook will:
-
-- Load the California Housing dataset
-- Split the data into train and test sets
-- Train regression models
-- Evaluate model performance
-- Save results to `results/results.csv`
-- Save figures to the `figures/` folder
-
-## Requirements
-
-The project uses the following Python libraries:
-
-- numpy
-- pandas
-- matplotlib
-- scikit-learn
-
-If running locally, install the required libraries with:
-
-    pip install numpy pandas matplotlib scikit-learn
-
-Google Colab already includes most of these packages.
-
-## Possible Improvements
-
-Future improvements could include:
-
-- Add exploratory data analysis
-- Add correlation heatmap
-- Add residual plots
-- Add feature scaling with StandardScaler
-- Use Pipeline for preprocessing and modeling
-- Add cross-validation results for all models
-- Compare more models, such as Random Forest and Gradient Boosting
-- Add hyperparameter tuning with GridSearchCV
-- Save trained models using joblib
-- Add a requirements.txt file
-- Make file paths more portable instead of relying on Google Drive paths
-- Clear notebook outputs before committing to improve GitHub readability
-
-## Conclusion
-
-This project demonstrates how regression models can be used to predict California housing prices.
-
-Among the tested models, Polynomial Regression achieved the best performance, indicating that nonlinear feature relationships are important for this dataset.
+```text
+Setup.ipynb
+Regression Analysis on California Housing Data.ipynb
+```
 
 ## Author
 
