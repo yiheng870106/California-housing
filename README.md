@@ -181,7 +181,7 @@ These figures are saved in the `figures/` directory.
 
 For example,
 <p align="center">
-  <img src="figures/True vs. Predicted Polynomial regression.png.png" width="900">
+  <img src="figures/True vs. Predicted Polynomial regression.png" width="900">
 </p>
 
 The red dashed line in each plot represents perfect prediction. Points closer to this line indicate better model performance.
