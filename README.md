@@ -176,7 +176,7 @@ The project generates true vs. predicted plots for each model.
 For example, 
 
 <p align=cneter>
-<img src="figures/True vs. Predicted HistGradientBoosting Regression.png width=500>
+<img src="figures/True vs. Predicted HistGradientBoosting Regression.png" width="500">
 </p>
 
 The red dashed line represents perfect prediction. Points closer to the line indicate better predictions.
