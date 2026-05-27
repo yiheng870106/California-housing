@@ -1,30 +1,12 @@
 # California Housing Regression Analysis
 
-This project performs regression analysis on the California Housing dataset using Python and scikit-learn.
-
-The goal is to predict median house values for California districts using demographic, household, and geographic features.
-
-This project compares 9 regression models:
-
-1. Linear Regression
-2. Polynomial Regression
-3. Ridge Regression
-4. Lasso Regression
-5. ElasticNet Regression
-6. Decision Tree Regression
-7. Random Forest Regression
-8. Gradient Boosting Regression
-9. HistGradientBoosting Regression
-
-The best-performing model in this project is HistGradientBoosting Regression, which achieved the highest test R² and the lowest test RMSE.
+This project performs regression analysis on the California Housing dataset using Python and scikit-learn. The goal is to predict median house values for California districts using demographic, household, and geographic features. This project compares 9 regression models. The best-performing model in this project is HistGradientBoosting Regression, which achieved the highest test R² and the lowest test RMSE.
 
 ## Dataset
 
 This project uses the California Housing dataset from scikit-learn.
 
 Dataset documentation: https://scikit-learn.org/stable/datasets/real_world.html#california-housing-dataset
-
-The dataset contains housing information for California districts.
 
 ## Features
 
@@ -80,9 +62,7 @@ Linear Regression is used as the baseline model.
 
 ### Polynomial Regression
 
-Polynomial Regression creates polynomial (of degree 2).
-
-In this project, Polynomial Regression performed better than the basic linear models, suggesting that nonlinear relationships are important.
+Polynomial Regression creates polynomial (of degree 2). In this project, Polynomial Regression performed better than the basic linear models, suggesting that nonlinear relationships are important.
 
 ### Ridge Regression
 
@@ -110,9 +90,7 @@ Gradient Boosting Regression builds trees sequentially.
 
 ### HistGradientBoosting Regression
 
-HistGradientBoosting Regression is a histogram-based version of gradient boosting.
-
-In this project, HistGradientBoosting Regression achieved the best test performance.
+HistGradientBoosting Regression is a histogram-based version of gradient boosting. In this project, HistGradientBoosting Regression achieved the best test performance.
 
 ## Evaluation Metrics
 
@@ -154,15 +132,9 @@ RMSE is especially useful because it is in the same unit as the target variable.
 
 ## Key Findings
 
-HistGradientBoosting Regression achieved the best performance on the test set.
+HistGradientBoosting Regression achieved the best performance on the test set. It reached a test R² of 0.8431 and a test RMSE of 0.4535. This means the model explains about 84.31% of the variance in the test data, and its typical prediction error is about $45,350.
 
-It reached a test R² of 0.8431 and a test RMSE of 0.4535.
-
-This means the model explains about 84.31% of the variance in the test data, and its typical prediction error is about $45,350.
-
-Tree-based ensemble models performed better than linear models. 
-
-This suggests that California housing prices are influenced by nonlinear relationships and feature interactions.
+Tree-based ensemble models performed better than linear models. This suggests that California housing prices are influenced by nonlinear relationships and feature interactions.
 
 Polynomial Regression also improved over basic linear regression, which further supports the idea that the relationship between housing features and median house value is not purely linear.
 
@@ -170,9 +142,7 @@ Ridge, Lasso, and ElasticNet performed similarly to Linear Regression. This sugg
 
 ## Prediction Plots
 
-The project generates true vs. predicted plots for each model.
-
-For example, 
+The project generates true vs. predicted plots for each model. For example, 
 
 <p align=cneter>
 <img src="figures/True vs. Predicted HistGradientBoosting Regression.png" width="500">
