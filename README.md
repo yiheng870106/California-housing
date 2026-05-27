@@ -48,7 +48,6 @@ The target is expressed in units of $100,000. For example, a target value of 2.0
 ## Project Structure
 
     California-housing/
-    |
     |-- notebooks/
     |-- src/
     |-- results/
