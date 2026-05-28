@@ -56,41 +56,17 @@ A feature-target correlation analysis was performed to measure the relationship 
 
 ## Models
 
-### Linear Regression
-
-Linear Regression is used as the baseline model.
-
-### Polynomial Regression
-
-Polynomial Regression creates polynomial (of degree 2). In this project, Polynomial Regression performed better than the basic linear models, suggesting that nonlinear relationships are important.
-
-### Ridge Regression
-
-Ridge Regression is a linear regression model with L2 regularization.
-
-### Lasso Regression
-
-Lasso Regression is a linear regression model with L1 regularization.
-
-### ElasticNet Regression
-
-ElasticNet Regression combines L1 and L2 regularization.
-
-### Decision Tree Regression
-
-Decision Tree Regression makes predictions using a tree structure of decision rules.
-
-### Random Forest Regression
-
-Random Forest Regression combines many decision trees and averages their predictions.
-
-### Gradient Boosting Regression
-
-Gradient Boosting Regression builds trees sequentially.
-
-### HistGradientBoosting Regression
-
-HistGradientBoosting Regression is a histogram-based version of gradient boosting. In this project, HistGradientBoosting Regression achieved the best test performance.
+| Model | Description |
+|---|---|
+| Linear Regression | Used as the baseline model. |
+| Polynomial Regression | Creates polynomial features of degree 2 to capture nonlinear relationships. In this project, Polynomial Regression performed better than the basic linear models, suggesting that nonlinear relationships are important. |
+| Ridge Regression | A linear regression model with L2 regularization to reduce overfitting and improve model stability. |
+| Lasso Regression | A linear regression model with L1 regularization that can shrink some coefficients to zero for feature selection. |
+| ElasticNet Regression | Combines L1 and L2 regularization, balancing feature selection and coefficient stability. |
+| Decision Tree Regression | Makes predictions using a tree structure of decision rules and can capture nonlinear relationships. |
+| Random Forest Regression | Combines many decision trees and averages their predictions to improve performance and reduce overfitting. |
+| Gradient Boosting Regression | Builds trees sequentially, where each new tree attempts to correct the errors made by previous trees. |
+| HistGradientBoosting Regression | A histogram-based version of gradient boosting that efficiently captures complex nonlinear relationships. In this project, HistGradientBoosting Regression achieved the best test performance. |
 
 ## Evaluation Metrics
 
@@ -142,7 +118,7 @@ Ridge, Lasso, and ElasticNet performed similarly to Linear Regression. This sugg
 
 ## Prediction Plots
 
-The project generates true vs. predicted plots for each model. For example, 
+The project generates true vs. predicted plots for each model. The true vs. preducted plot of HistGradientBoosting Regression is shown below.
 
 <p align=cneter>
 <img src="figures/True vs. Predicted HistGradientBoosting Regression.png" width="500">
